@@ -15,6 +15,14 @@ def mult_test_int():
         result *= 2
     return result
 
+#2*10^9 division
+def division_test_int(): 
+    result = 5**10
+    for _ in range(2 * 10**9): 
+        result /= 2
+        
+    return result
+
 if __name__ == '__main__': 
     add_int_time = timeit.timeit(add_test_int)
     print(add_int_time)
