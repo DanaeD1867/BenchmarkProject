@@ -1,4 +1,5 @@
 import timeit
+import numpy as np
 
 """32-bit integer operation benchmark"""
 #10^10 additions
@@ -46,9 +47,12 @@ def division_test_float():
     return result
 
 #Memory benchmark
-
 def read_array_test(): 
-    pass
+    lst = np.zeros(5*10**9, dtype=np.int32)
+    result = 0
+    for i in range(5 * 10**9): 
+        result += lst[i]
+    return result
 
 def write_array_test(): 
     pass
@@ -71,5 +75,8 @@ if __name__ == '__main__':
     #add_int_time = timeit.timeit(add_test_int)
     #print("The add_test_int function took " + str(add_int_time) + " seconds")
 
-    mult_int_time = timeit.timeit(mult_test_int)
-    print("The mult_test_int function took " + str(mult_int_time) + " seconds")
+    #mult_int_time = timeit.timeit(mult_test_int)
+    #print("The mult_test_int function took " + str(mult_int_time) + " seconds")
+
+    divide_int_time = timeit.timeit(division_test_int)
+    print("The divide_test_int function took " + str(divide_int_time) + " seconds")
