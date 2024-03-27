@@ -5,7 +5,7 @@ import timeit
 def add_test_int(): 
     result = 0 
     for _ in range(10**10): 
-        result += 5
+        result += 2
     return result
 
 #10^9 mulitplication
@@ -31,10 +31,17 @@ def add_test_float():
         result += 5.00
     return result
 
+#10^9 mulitplication
+def mult_test_float(): 
+    result = 1.00
+    for _ in range(5.00*10.00**9.00): 
+        result *= 2.00
+    return result
+
 #Memory benchmark
 #Hard drive benchmark 1
 #Hard drive benchmark 2
 
 if __name__ == '__main__': 
-    #add_int_time = timeit.timeit(add_test_int)
-    print("The add_test_int function took " + str(258) + " seconds")
+    add_int_time = timeit.timeit(add_test_int)
+    print("The add_test_int function took " + str(add_int_time) + " seconds")
