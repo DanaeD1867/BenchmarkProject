@@ -55,7 +55,10 @@ def read_array_test():
     return result
 
 def write_array_test(): 
-    pass
+    lst = np.zeros(5*10**9, dtype=np.int32)
+    for i in range(5*10**9): 
+        lst[i] = i
+    return lst
 
 #Hard drive benchmark 1
 def drive_test_read_1(): 
