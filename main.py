@@ -68,5 +68,8 @@ def drive_test_read_2():
     pass
 
 if __name__ == '__main__': 
-    add_int_time = timeit.timeit(add_test_int)
-    print("The add_test_int function took " + str(add_int_time) + " seconds")
+    #add_int_time = timeit.timeit(add_test_int)
+    #print("The add_test_int function took " + str(add_int_time) + " seconds")
+
+    mult_int_time = timeit.timeit(mult_test_int)
+    print("The mult_test_int function took " + str(mult_int_time) + " seconds")
