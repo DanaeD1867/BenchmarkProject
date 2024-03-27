@@ -86,14 +86,11 @@ if __name__ == '__main__':
     #print("The divide_test_int function took " + str(divide_int_time) + " seconds")
 
     #add_float_time = timeit.timeit(add_test_float)
-    #print("The add_test_float function took " + str(add_float_time) + " seconds")
-
-    
-    
-
-    
+    #print("The add_test_float function took " + str(add_float_time) + " seconds") 
 
     read_array_time = timeit.timeit(read_array_test)
     print('The read_array_test function took ' + str(read_array_time) + ' seconds')
 
+    #write_array_time = timeit.timeit(write_array_test)
+    #print('The read_array_test function took ' + str(write_array_time) + ' seconds')
     
