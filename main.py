@@ -19,7 +19,7 @@ def mult_test_int():
 #2*10^9 division
 def division_test_int(): 
     result = 5**10
-    for _ in range(2 * 10**5): 
+    for _ in range(2 * 10**9): 
         result /= 2
     return result
 
@@ -28,14 +28,14 @@ def division_test_int():
 #10^10 additions
 def add_test_float(): 
     result = 0.00
-    for _ in range(10.00**10.00): 
+    for _ in range(10**10): 
         result += 5.00
     return result
 
 #10^9 mulitplication
 def mult_test_float(): 
     result = 1.00
-    for _ in range(5.00*10.00**9.00): 
+    for _ in range(5.00*10.00**9): 
         result *= 2.00
     return result
 
@@ -64,7 +64,6 @@ def write_array_test():
 def drive_test_read_1(): 
     pass
     
-
 def drive_test_write_1(): 
     pass
 
@@ -88,8 +87,12 @@ if __name__ == '__main__':
     #add_float_time = timeit.timeit(add_test_float)
     #print("The add_test_float function took " + str(add_float_time) + " seconds") 
 
-    read_array_time = timeit.timeit(read_array_test)
-    print('The read_array_test function took ' + str(read_array_time) + ' seconds')
+    
+    mult_float_time = timeit.timeit(mult_test_float)
+    print("The mult_test_int function took " + str(mult_float_time) + " seconds")
+
+    #read_array_time = timeit.timeit(read_array_test)
+    #print('The read_array_test function took ' + str(read_array_time) + ' seconds')
 
     #write_array_time = timeit.timeit(write_array_test)
     #print('The read_array_test function took ' + str(write_array_time) + ' seconds')
