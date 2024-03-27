@@ -46,8 +46,26 @@ def division_test_float():
     return result
 
 #Memory benchmark
+
+def read_array_test(): 
+    pass
+
+def write_array_test(): 
+    pass
+
 #Hard drive benchmark 1
+def drive_test_read_1(): 
+    pass
+
+def drive_test_write_1(): 
+    pass
+
 #Hard drive benchmark 2
+def drive_test_write_2(): 
+    pass
+
+def drive_test_read_2(): 
+    pass
 
 if __name__ == '__main__': 
     add_int_time = timeit.timeit(add_test_int)
