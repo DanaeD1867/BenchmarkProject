@@ -38,6 +38,13 @@ def mult_test_float():
         result *= 2.00
     return result
 
+#2*10^9 division
+def division_test_float(): 
+    result = 5.00**10.00
+    for _ in range(2.00 * 10.00**9.00): 
+        result /= 2.00
+    return result
+
 #Memory benchmark
 #Hard drive benchmark 1
 #Hard drive benchmark 2
