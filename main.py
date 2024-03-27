@@ -35,7 +35,7 @@ def add_test_float():
 #10^9 mulitplication
 def mult_test_float(): 
     result = 1.00
-    for _ in range(5.00*10.00**9): 
+    for _ in range(5*10**9): 
         result *= 2.00
     return result
 
