@@ -19,7 +19,7 @@ def mult_test_int():
 #2*10^9 division
 def division_test_int(): 
     result = 5**10
-    for _ in range(2 * 10**9): 
+    for _ in range(2 * 10**5): 
         result /= 2
     return result
 
@@ -55,14 +55,13 @@ def read_array_test():
     return result
 
 def write_array_test(): 
-    lst = np.zeros(5*10**9, dtype=np.int32)
-    for i in range(5*10**9): 
-        lst[i] = i
-    return lst
+    pass
+    
 
 #Hard drive benchmark 1
 def drive_test_read_1(): 
     pass
+    
 
 def drive_test_write_1(): 
     pass
@@ -84,5 +83,9 @@ if __name__ == '__main__':
     #divide_int_time = timeit.timeit(division_test_int)
     #print("The divide_test_int function took " + str(divide_int_time) + " seconds")
 
-    add_float_time = timeit.timeit(add_test_float)
-    print("The add_test_float function took " + str(add_float_time) + " seconds")
+    #add_float_time = timeit.timeit(add_test_float)
+    #print("The add_test_float function took " + str(add_float_time) + " seconds")
+
+    
+
+    
