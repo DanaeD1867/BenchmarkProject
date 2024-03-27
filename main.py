@@ -55,8 +55,10 @@ def read_array_test():
     return result
 
 def write_array_test(): 
-    pass
-    
+    lst = np.zeros(5*10**9, dtype=np.int32)
+    for i in range(5*10**9): 
+        lst[i] = i
+    return lst
 
 #Hard drive benchmark 1
 def drive_test_read_1(): 
@@ -87,5 +89,11 @@ if __name__ == '__main__':
     #print("The add_test_float function took " + str(add_float_time) + " seconds")
 
     
+    
+
+    
+
+    read_array_time = timeit.timeit(read_array_test)
+    print('The read_array_test function took ' + str(read_array_time) + ' seconds')
 
     
