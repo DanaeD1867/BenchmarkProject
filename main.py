@@ -81,5 +81,8 @@ if __name__ == '__main__':
     #mult_int_time = timeit.timeit(mult_test_int)
     #print("The mult_test_int function took " + str(mult_int_time) + " seconds")
 
-    divide_int_time = timeit.timeit(division_test_int)
-    print("The divide_test_int function took " + str(divide_int_time) + " seconds")
+    #divide_int_time = timeit.timeit(division_test_int)
+    #print("The divide_test_int function took " + str(divide_int_time) + " seconds")
+
+    add_float_time = timeit.timeit(add_test_float)
+    print("The add_test_float function took " + str(add_float_time) + " seconds")
